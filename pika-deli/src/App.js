@@ -3,14 +3,14 @@ import logo from './logo.svg'
 import './App.css'
 import PikaContext from './context/PikaContext'
 import PikaReducer from './Reducers/PikaReducer'
-import Header from './Components/Common/Header'
+import Navbar from './Components/Common/Navbar'
 
 const App = () => {
   const [state, dispatch] = useReducer(PikaReducer)
 
   return (
     <PikaContext.Provider value={{ state, dispatch }}>
-      <Header />
+      <Navbar />
     </PikaContext.Provider>
   );
 }
