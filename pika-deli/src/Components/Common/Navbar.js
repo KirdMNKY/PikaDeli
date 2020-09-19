@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useState, useEffect, useContext } from 'react'
+import PikaContext from '../../context/PikaContext'
 import {
   Menu,
   MessageCircle,
@@ -15,6 +16,8 @@ import '../../App.css'
 
 
 export default function Navbar({ fixed }) {
+  const { state, dispatch } = useContext(PikaContext)
+
   const [navbarOpen, setNavbarOpen] = React.useState(false)
 
 
