@@ -1,18 +1,20 @@
 import React from 'react'
-import Product from '../Common/Product'
+import ProductCard from '../Common/ProductCard'
 
 export default function Products() {
   return (
     <>
-      <div className="flex flex-wrap justify-center mb-8 mx-4 lg:mx-auto xl:mx-auto justify-around">
-        <Product />
-        <Product />
-        <Product />
-        <Product />
-        <Product />
-        <Product />
-        <Product />
-        <Product />
+      <div className="flex flex-wrap items-center justify-center mb-8 mx-4 md:mx-16 lg:mx-32 xl:mx-64 justify-around">
+        <ProductCard />
+        <ProductCard />
+        <ProductCard />
+        <ProductCard />
+        <ProductCard />
+        <ProductCard />
+        <ProductCard />
+        <ProductCard />
+        <ProductCard />
+        <ProductCard />
       </div>
     </>
   )

@@ -79,7 +79,16 @@ export default function Navbar({ fixed }) {
                   <MessageCircle className="opacity-75" /><span className="ml-2">Contact Us</span>
                 </a>
               </li>
-              <li className="flex justify-around mt-10 md:mt-0">
+              <li className="nav-item">
+                <a
+                  className="px-3 py-2 flex items-center text-md uppercase font-bold leading-snug text-white hover:opacity-75"
+                  href="#cart"
+                >
+                  <ShoppingCart className="opacity-75" />
+                  <span className="ml-2 lg:hidden">Shopping Cart</span>
+                </a>
+              </li>
+              <li className="flex justify-around mt-10 md:mt-0 lg:hidden">
                 <a className="px-3 py-2 flex items-center text-md uppercase font-bold leading-snug text-white hover:opacity-75"
                   href="#facebook"><Facebook /></a>
                 <a className="px-3 py-2 flex items-center text-md uppercase font-bold leading-snug text-white hover:opacity-75"
