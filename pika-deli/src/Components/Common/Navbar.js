@@ -23,7 +23,7 @@ export default function Navbar({ fixed }) {
 
   return (
     <>
-      <nav className="relative flex flex-wrap items-center justify-between px-2 py-3 navbar-expand-lg bg-blue-500 mb-3">
+      <nav className="relative flex flex-wrap items-center justify-between px-2 py-3 navbar-expand-lg bg-blue-500">
         <div className="container px-4 mx-auto flex flex-wrap items-center justify-between wendy-font">
           <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
             <button
@@ -79,7 +79,7 @@ export default function Navbar({ fixed }) {
                   <MessageCircle className="opacity-75" /><span className="ml-2">Contact Us</span>
                 </a>
               </li>
-              <li className="flex justify-around mt-10">
+              <li className="flex justify-around mt-10 md:mt-0">
                 <a className="px-3 py-2 flex items-center text-md uppercase font-bold leading-snug text-white hover:opacity-75"
                   href="#facebook"><Facebook /></a>
                 <a className="px-3 py-2 flex items-center text-md uppercase font-bold leading-snug text-white hover:opacity-75"
