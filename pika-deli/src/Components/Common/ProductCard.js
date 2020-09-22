@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Product() {
+export default function ProductCard() {
   return (
     <>
       <div className="w-5/12 md:w-1/6 m-4 rounded overflow-hidden shadow-lg">
