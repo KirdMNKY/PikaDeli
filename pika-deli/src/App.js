@@ -5,14 +5,16 @@ import PikaContext from './context/PikaContext'
 import PikaReducer from './Reducers/PikaReducer'
 import Navbar from './Components/Common/Navbar'
 
-const App = () => {
+import Home from './Components/Pages/Home'
+
+export default function App() {
   const [state, dispatch] = useReducer(PikaReducer)
 
   return (
     <PikaContext.Provider value={{ state, dispatch }}>
       <Navbar />
+      <Home />
     </PikaContext.Provider>
   );
 }
 
-export default App
