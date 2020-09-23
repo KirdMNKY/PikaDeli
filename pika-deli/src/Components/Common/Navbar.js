@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useContext } from 'react'
+import { Link } from "react-router-dom"
 import PikaContext from '../../context/PikaContext'
 import {
   Menu,
@@ -15,7 +16,7 @@ import '../../App.css'
 
 
 
-export default function Navbar({ fixed }) {
+const Navbar = ({ fixed }) => {
   const { state, dispatch } = useContext(PikaContext)
 
   const [navbarOpen, setNavbarOpen] = React.useState(false)
@@ -35,17 +36,19 @@ export default function Navbar({ fixed }) {
             </button>
             <a
               className="text-3xl font-bold leading-relaxed inline-block mr-4 py-2 whitespace-no-wrap uppercase text-white"
-              href="#pablo"
+              href="/home"
             >
               Pika Deli
           </a>
+          <Link to="/cart">
             <button
               className="text-white cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
               type="button"
-            // onClick={() => setNavbarOpen(!navbarOpen)}
+            
             >
               <ShoppingCart />
             </button>
+          </Link>
           </div>
           <div
             className={
@@ -58,7 +61,7 @@ export default function Navbar({ fixed }) {
               <li className="nav-item">
                 <a
                   className="px-3 py-2 flex items-center text-md uppercase font-bold leading-snug text-white hover:opacity-75"
-                  href="#products"
+                  href="/products"
                 >
                   <ShoppingBag className="opacity-75" /><span className="ml-2">Products</span>
                 </a>
@@ -66,7 +69,7 @@ export default function Navbar({ fixed }) {
               <li className="nav-item">
                 <a
                   className="px-3 py-2 flex items-center text-md uppercase font-bold leading-snug text-white hover:opacity-75"
-                  href="#aboutus"
+                  href="/about"
                 >
                   <User className="opacity-75" /><span className="ml-2">About Us</span>
                 </a>
@@ -74,7 +77,7 @@ export default function Navbar({ fixed }) {
               <li className="nav-item">
                 <a
                   className="px-3 py-2 flex items-center text-md uppercase font-bold leading-snug text-white hover:opacity-75"
-                  href="#contactus"
+                  href="/contact"
                 >
                   <MessageCircle className="opacity-75" /><span className="ml-2">Contact Us</span>
                 </a>
@@ -82,7 +85,7 @@ export default function Navbar({ fixed }) {
               <li className="nav-item">
                 <a
                   className="px-3 py-2 flex items-center text-md uppercase font-bold leading-snug text-white hover:opacity-75"
-                  href="#cart"
+                  href="/cart"
                 >
                   <ShoppingCart className="opacity-75" />
                   <span className="ml-2 lg:hidden">Shopping Cart</span>
@@ -104,3 +107,5 @@ export default function Navbar({ fixed }) {
 
   )
 }
+
+export default Navbar
