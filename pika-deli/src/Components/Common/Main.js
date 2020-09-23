@@ -13,7 +13,6 @@ const Main = () => {
           <Route path="/" exact={true} component={Home} />
           <Route path="/home" component={Home} />
           <Route path="/products" component={Products} />
-          
           {/* <Route path="/contact" component={Contact} />
           <Route path="/about" component={About} />
           <Route path="/cart" component={Cart} /> */}
