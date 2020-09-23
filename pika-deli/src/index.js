@@ -2,6 +2,8 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import './assets/main.css'
 import App from './App'
+import Home from './Components/Pages/Home'
+import Products from './Components/Pages/Products'
 import * as serviceWorker from './serviceWorker'
 
 ReactDOM.render(

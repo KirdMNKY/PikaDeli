@@ -1,7 +1,10 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import Products from './Products'
 
+
 export default function Home() {
+
   return (
     <div>
       <div className="relative pt-16 pb-32 flex content-center items-center justify-center"
@@ -24,9 +27,13 @@ export default function Home() {
                 <p className="mt-4 text-lg text-gray-300">
                   Two human beings with the idea of sweetening your life and putting a smile on your face.
                     </p>
-                <button className="bg-pink-600 text-white active:bg-pink-700 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mt-10 transition-all ease-in-out" type="button">
-                  Shop Now
-                </button>
+                    <Link to="/products">
+                      <button className="bg-pink-600 text-white active:bg-pink-700 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mt-10 transition-all ease-in-out" 
+                        type="button"
+                      >
+                        Shop Now
+                      </button>
+                    </Link>
               </div>
             </div>
           </div>
